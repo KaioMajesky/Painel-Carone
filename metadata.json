@@ -1,0 +1,5 @@
+{
+  "name": "Organizador de Cargas",
+  "description": "Uma aplicação para ajudar no trabalho de logística, processando e organizando dados de cargas colados em um campo de texto.",
+  "requestFramePermissions": []
+}

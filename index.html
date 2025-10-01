@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organizador de Cargas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .print-only {
+            display: none;
+        }
+
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+
+        @media print {
+          /* Reset base styles for a clean slate */
+          body, main, #root, #root > div {
+            display: block !important;
+            width: auto !important;
+            height: auto !important;
+            overflow: visible !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            background: #fff !important;
+            color: #000;
+          }
+
+          /* Hide elements not intended for printing */
+          aside, .no-print {
+            display: none !important;
+          }
+
+          /* Show elements specifically for printing */
+          .print-only {
+            display: block;
+          }
+
+          /* Style the main printable content area */
+          .printable-area {
+            border: none !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+          }
+          
+          .printable-area table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #000 !important;
+            background: none !important;
+          }
+
+          .printable-area th,
+          .printable-area td {
+            border: 1px solid #ccc !important;
+            padding: 8px !important;
+            color: #000 !important;
+            background: none !important;
+          }
+
+          .printable-area thead {
+             background-color: #f2f2f2 !important; /* Light grey header for better readability */
+          }
+          
+          .printable-area .delete-column {
+            display: none;
+          }
+
+          /* Styles for the new ImpressoesScreen */
+          .printable-forms-container {
+            display: block !important;
+            background-color: #fff !important;
+            padding: 0 !important;
+            border-radius: 0 !important;
+          }
+
+          .printable-page {
+            page-break-after: always;
+            padding-top: 0 !important;
+          }
+
+          .printable-page:last-child {
+            page-break-after: auto;
+          }
+
+          /* Force black/white colors for form printing */
+          .printable-forms-container * {
+            color: #000 !important;
+            border-color: #000 !important;
+            background-color: transparent !important;
+          }
+
+          .printable-forms-container .form-header-dark {
+            background-color: #334155 !important; /* Corresponde a slate-800 */
+          }
+           .printable-forms-container .form-header-dark * {
+            color: #fff !important;
+           }
+
+          .printable-forms-container .bg-gray-200 {
+            background-color: #e5e7eb !important; /* Corresponde a gray-200 */
+          }
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
