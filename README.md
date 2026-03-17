@@ -1,11 +1,11 @@
-# 📦 Painel de Chamadas - Logística (Picking)
+# 📦 Painel de Chamadas - Logística Carone
 
-## 📝 Sobre o Projeto
-Este sistema foi desenvolvido para otimizar o processo de separação de mercadorias (picking) em um centro de distribuição. A solução substitui o controle manual/papel por um painel digital, permitindo a organização e visualização em tempo real.
+Sistema de gestão de picking desenvolvido para otimizar a separação de mercadorias.
 
-## 🛠️ Tecnologias Utilizadas
-HTML5, CSS3 (Flexbox/Grid)
-JavaScript (Manipulação de DOM e estados)
+## 🛠️ Tecnologias
+* **React + Vite** (Performance e modernidade)
+* **TypeScript** (Segurança e tipagem de dados)
+* **Tailwind CSS** (Estilização responsiva)
 
-## 💡 Problema Resolvido
-No cenário anterior, a gestão das listas de separação era feita de forma analógica, o que gerava atrasos e falta de visibilidade do progresso. Com o painel, a equipe de planejamento ganhou agilidade na distribuição das tarefas.
+## 💡 Diferencial
+O projeto separa as telas por setores (**Açougue, Cortes, Separação e Impressões**), permitindo um fluxo de trabalho organizado e escalável.
